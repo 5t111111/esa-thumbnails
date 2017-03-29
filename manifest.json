@@ -1,0 +1,13 @@
+{
+  "name": "esa thumbnails",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Always show thumbnails of uploaded images on esa.io posts",
+  "content_scripts": [
+    {
+      "matches": ["https://*.esa.io/*"],
+      "js": ["esa-thumbnails.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
